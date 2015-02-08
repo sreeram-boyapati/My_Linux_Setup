@@ -46,14 +46,12 @@ mkdir projects
 echo "export GOROOT='/usr/bin/go'" >> .bashrc
 echo "export GOPATH='~/projects/'" >> .bashrc
 mkdir codes
-cd projects
+
 pip install -U pip
-
 #college code stuff
-git clone git@github.com:aneesh-neelam/VITacademics-Worker.git
-git clone git@github.com:sreeram-boyapati/VITacademics-for-Android.git
-git clone git@github.com:sreeram-boyapati/VITacademics.git
-
+(cd projects; git clone git@github.com:aneesh-neelam/VITacademics-Worker.git;
+    git clone git@github.com:sreeram-boyapati/VITacademics-for-Android.git;
+    git clone git@github.com:sreeram-boyapati/VITacademics.git)
+(cd VITacademics; sudo npm install)
 ####
-cd ~
 
