@@ -1,6 +1,6 @@
 mkdir .ssh
 (cd .ssh; ssh-keygen -t rsa -C "sreeram.boyapati2011@gmail.com";
-	ssh-keygen -t rsa -C "sreeram@hackerearth.com")
+ssh-keygen -t rsa -C "sreeram@hackerearth.com")
 touch config
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get install python-pip
@@ -15,6 +15,7 @@ sudo apt-get install exuberant-ctags
 sudo apt-get install vim
 sudo apt-get install git
 sudo apt-get install ipython
+sudo apt-get install vlc
 sudo apt-get install p7zip-full
 sudo apt-get install golang
 sudo apt-get install mercurial
@@ -31,13 +32,16 @@ wget --no-check-certificate http://install.ohmyz.sh -O - | sudo zsh
 sudo apt-get install mesa-common-dev
 sudo apt-get install qtbase5-dev
 
-mkdir softwares
+mkdir -p ~/softwares
 
+mkdir -p ~/fonts
 #get vim config
 wget http://www.mediafire.com/download/ja3hx9oau96d9p5/vimbackup.tar.gz
 tar -xvf vimbackup.tar.gz
 
-
+#source code pro fonts
+(cd ~/fonts; wget https://github.com/adobe-fonts/source-code-pro/archive/1.017R.tar.gz;
+tar -xvf source-code-pro-1.017R.tar.gz)
 
 npm install -g jshint
 
@@ -50,8 +54,10 @@ mkdir codes
 pip install -U pip
 #college code stuff
 (cd projects; git clone git@github.com:aneesh-neelam/VITacademics-Worker.git;
-    git clone git@github.com:sreeram-boyapati/VITacademics-for-Android.git;
-    git clone git@github.com:sreeram-boyapati/VITacademics.git)
+git clone git@github.com:sreeram-boyapati/VITacademics-for-Android.git;
+git clone git@github.com:sreeram-boyapati/VITacademics.git)
+
 (cd VITacademics; sudo npm install)
 ####
-
+echo "Manually Install Fonts"
+echo "Manually Add Bira as zsh theme."
