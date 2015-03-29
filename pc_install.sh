@@ -1,7 +1,7 @@
-mkdir .ssh
-(cd .ssh; ssh-keygen -t rsa -C "sreeram.boyapati2011@gmail.com";
-ssh-keygen -t rsa -C "sreeram@hackerearth.com")
-touch config
+#mkdir .ssh
+#(cd .ssh; ssh-keygen -t rsa -C "sreeram.boyapati2011@gmail.com";
+#ssh-keygen -t rsa -C "sreeram@hackerearth.com")
+#touch config
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get install python-pip
 sudo apt-get install update
