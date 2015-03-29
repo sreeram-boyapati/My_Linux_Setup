@@ -1,0 +1,10 @@
+Host GitHub
+	HostName www.github.com
+	User git
+	IdentityFile ~/.ssh/github
+Host HackerEarth
+    HostName www.bitbucket.org
+    User git
+    IdentityFile ~/.ssh/hackerearth
+Host *hackerearth.com
+    ServerAliveInterval 15
